@@ -1193,7 +1193,6 @@ button.cale-btn:hover {
 .target-info:before {
   content: "";
   position: relative;
-  background: url(img/background/footer.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top right;
@@ -1482,7 +1481,8 @@ button.cale-btn:hover {
 
 .footer-area {
   position: relative;
-  background: url(img/background/footer.png);
+  /* background: url(img/background/footer.png); */
+  background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;

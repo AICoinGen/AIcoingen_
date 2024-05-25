@@ -114,7 +114,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div class="footer-area-bottom">
+      {/* <div class="footer-area-bottom">
         <div class="container">
           <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6">
@@ -138,7 +138,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 };

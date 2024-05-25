@@ -20,7 +20,7 @@ const Header = () => {
     },
   ];
   return (
-    <header class="header-one">
+    <header class="header-one bg-color-5">
       <div class="header-menu-area header-area">
         <div class="container">
           <div class="row">

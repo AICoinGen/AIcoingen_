@@ -21,7 +21,7 @@ const Profile = ({
   const [open, setOpen] = useState("Dashbord");
 
   return (
-    <div class="dsahboard-area bg-color area-padding-3">
+    <div class="dsahboard-area bg-color-5 area-padding-3">
       <div class="container">
         <div class="row">
           <SideBar

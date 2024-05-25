@@ -2,7 +2,7 @@ import React from "react";
 import { BsBoxArrowRight } from "react-icons/bs";
 const UserProfile = () => {
   return (
-    <div class="page-area bread-pd">
+    <div class="page-area bg-color-5 bread-pd">
       <div class="breadcumb-overlay"></div>
       <div class="container">
         <div class="row">

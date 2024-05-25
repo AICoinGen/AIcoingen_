@@ -20,15 +20,14 @@ const Swap = ({ nativeToken, transferNativeToken }) => {
               <div class="swap-token left-headline">
                 <div class="top-text-title">COIN SWAP</div>
                 <h2>
-                  You can swap{" "}
-                  <span class="color-text-bold">Graphbit token</span> anytime
+                  You can swap <span class="color-text-bold">AICoin token</span>{" "}
+                  anytime
                 </h2>
                 <p>
-                  Blockchain opt in to the projects they genuinely want to work
-                  on.maintains the amount of lines. When replacing a selection.
-                  help agencies to define. define their new business objectives
-                  and then Our consultants opt in to the projects they genuinely
-                  want to work on.{" "}
+                  AICoin is the native cryptocurrency of this platform, offering
+                  seamless and secure transactions. With AICoin, you can send
+                  any amount to anywhere in the world quickly and efficiently,
+                  making it the ideal choice for your digital financial needs.
                 </p>
               </div>
             </div>
