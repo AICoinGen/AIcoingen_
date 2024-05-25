@@ -351,6 +351,8 @@ div#preloader {
 .logo img {
   position: relative;
   z-index: 2;
+  width: 70px;
+  height: 70px;
 }
 
 .menu-bg {
@@ -541,13 +543,13 @@ div#preloader {
 
 .calculator-inner {
   padding: 30px;
-  background: #131740;
+  background: #000;
   border-radius: 3px;
 }
 
 .calculator-inner .form-input {
   border: 1px solid #0d102d;
-  background: #0f1336;
+  background: #131313;
   height: 52px;
   border-radius: 0px;
   padding: 5px 15px;
