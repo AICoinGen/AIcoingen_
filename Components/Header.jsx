@@ -33,7 +33,7 @@ const Header = () => {
             </div>
             <div class="col-xl-10 col-lg-10 col-md-9">
               <div class="header-right ">
-                <a href="#" class="top-btn coin-btn">
+                <a href="#" class="top-btn coin-btn rounded-full">
                   Buy token
                 </a>
               </div>
