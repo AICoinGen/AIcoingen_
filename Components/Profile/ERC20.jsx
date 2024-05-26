@@ -4,7 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  apiKey: "sk-proj-C2je0PEkLWoKhhptR8tFT3BlbkFJVg7pWZU2tOix7kQt8jk7", // This is the default and can be omitted
+  // apiKey: "sk-proj-C2je0PEkLWoKhhptR8tFT3BlbkFJVg7pWZU2tOix7kQt8jk7", // This is the default and can be omitted
   // process.env["sk-proj-C2je0PEkLWoKhhptR8tFT3BlbkFJVg7pWZU2tOix7kQt8jk7"], // This is the default and can be omitted
   dangerouslyAllowBrowser: true,
 });
