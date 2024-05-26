@@ -37,7 +37,7 @@ const create = () => {
           transferNativeToken={transferNativeToken}
         />
       )}
-      <main>
+      <main class="">
         {/* <UserProfile /> */}
         <Profile
           nativeToken={nativeToken}

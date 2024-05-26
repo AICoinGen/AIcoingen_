@@ -4,7 +4,7 @@ const Table = ({ tableData, title }) => {
   return (
     <div class="row">
       <div class="col-xl-12 col-lg-12 col-md-12">
-        <div class="send-money-form transection-log">
+        <div class="send-money-form transection-log ">
           <div class="form-text">
             <h4 class="form-top">
               {" "}
@@ -13,7 +13,7 @@ const Table = ({ tableData, title }) => {
             {tableData.length == 0 ? (
               ""
             ) : (
-              <div class="form-inner table-inner">
+              <div class="form-inner table-inner rounded-xl bg-black shadow-xl">
                 <table>
                   <thead>
                     <tr>

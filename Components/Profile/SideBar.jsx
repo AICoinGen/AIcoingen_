@@ -17,7 +17,7 @@ const SideBar = ({ setActive, setOpen, open, address, setTransfer }) => {
     <div class="col-xl-3 col-lg-3 col-md-4">
       <aside class="sidebar">
         <div class="dashboard-side">
-          <div class="dashboard-head">
+          <div class="dashboard-head rounded-xl bg-black shadow-xl">
             <div class="dashboard-profile">
               <img src="img/about/profile.png" alt="" />
               <div class="profile-content">
@@ -26,16 +26,16 @@ const SideBar = ({ setActive, setOpen, open, address, setTransfer }) => {
               </div>
             </div>
           </div>
-          <div class="dashboard-menu">
-            <ul>
+          <div class="dashboard-menu rounded-xl bg-black shadow-xl">
+            <ul className="">
               {menuList.map((el, i) => (
                 <li
                   onClick={() => setOpen(el.name)}
-                  class={open == el.name ? "active" : ""}
+                  class={open == el.name ? "active " : ""}
                 >
-                  <a>
+                  <a className="flex flex-row">
                     <BsBoxArrowRight />
-                    <span className="new_space"> </span>
+                    {/* <span className="new_space"> </span> */}
                     {el.name}
                   </a>
                 </li>
@@ -43,14 +43,12 @@ const SideBar = ({ setActive, setOpen, open, address, setTransfer }) => {
               <li onClick={() => setActive(true)}>
                 <a href="#">
                   <BsBoxArrowRight />
-                  <span className="new_space"> </span>
                   Create Token
                 </a>
               </li>
               <li onClick={() => setTransfer(true)}>
                 <a href="#">
                   <BsBoxArrowRight />
-                  <span className="new_space"> </span>
                   Token Transfer
                 </a>
               </li>
