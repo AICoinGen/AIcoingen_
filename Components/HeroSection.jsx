@@ -8,11 +8,14 @@ const HeroSection = () => {
       </div>
       <div class="intro-content">
         <div class="slider-content">
-          <div class="container">
+          <div class="container" className="mx-8">
             <div class="row d-flex flex-wrap align-items-center">
               <div class="col-xl-6 col-lg-6 col-md-6">
                 <div class="slide-all-text">
-                  <div class="layer-2 wow fadeInUp" data-wow-delay="0.3s">
+                  <div
+                    class="layer-2 wow fadeInUp text-3xl"
+                    data-wow-delay="0.3s"
+                  >
                     <h1 class="title-2">
                       Create your own{" "}
                       <span class="color-text-bold">ERC20 </span>token with{" "}
@@ -20,11 +23,17 @@ const HeroSection = () => {
                     </h1>
                   </div>
 
-                  <div class="layer-3 wow fadeInUp" data-wow-delay="0.7s">
-                    <a href="contact.html" class="ready-btn coin-btn">
+                  <div class=" space-x-4" data-wow-delay="0.7s">
+                    <a
+                      href="contact.html"
+                      className="bg-white px-5 py-3  rounded-full text-black text-md"
+                    >
                       Get Started
                     </a>
-                    <a href="coin.html" class="ready-btn color-btn last-btn">
+                    <a
+                      href="coin.html"
+                      class="bg-black border-2 px-5 py-3  rounded-full text-white text-md"
+                    >
                       White Paper
                     </a>
                   </div>

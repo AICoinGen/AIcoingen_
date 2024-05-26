@@ -2,8 +2,10 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import OpenAI from "openai";
+const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 
 const openai = new OpenAI({
+  apiKey: apiKey,
   dangerouslyAllowBrowser: true,
 });
 
@@ -52,7 +54,7 @@ const ERC20 = ({ setActive, createERC20 }) => {
   return (
     <div class="login-area area-padding fix">
       <div class="login-overlay"></div>
-      <div class="container">
+      <div class="container" className="bg-red-500">
         <div class="row justify-content-center text-center ">
           <div class="col-xl-6 col-lg-6 col-md-8">
             <div class="login-form signup-form">
