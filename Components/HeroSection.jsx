@@ -8,18 +8,17 @@ const HeroSection = () => {
       </div>
       <div class="intro-content">
         <div class="slider-content">
-          <div class="container" className="mx-8">
+          <div class="container mx-10">
             <div class="row d-flex flex-wrap align-items-center">
               <div class="col-xl-6 col-lg-6 col-md-6">
                 <div class="slide-all-text">
                   <div
-                    class="layer-2 wow fadeInUp text-3xl"
+                    class="layer-2 wow fadeInUp text-3xl py-2 "
                     data-wow-delay="0.3s"
                   >
-                    <h1 class="title-2">
-                      Create your own{" "}
-                      <span class="color-text-bold">ERC20 </span>token with{" "}
-                      <span class="color-text-bold">AI </span>{" "}
+                    <h1 class="title-2 ">
+                      Create your own <span class="text-[#ff03b7]">ERC20 </span>
+                      token with <span class="text-[#ff03b7]">AI </span>{" "}
                     </h1>
                   </div>
 

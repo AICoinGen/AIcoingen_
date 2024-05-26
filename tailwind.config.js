@@ -9,6 +9,10 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      Poetsen: ['"Poetsen One"', "serif"], // Ensure fonts with spaces have " " surrounding it.
+      Raleway: ["Raleway"], // Ensure fonts with spaces have " " surrounding it.
+    },
     extend: {
       keyframes: {
         wiggle: {

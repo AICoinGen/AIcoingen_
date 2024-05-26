@@ -33,8 +33,8 @@ const Footer = () => {
     },
   ];
   return (
-    <footer class="footer1">
-      <div class="footer-area">
+    <footer class="footer1 ">
+      <div class="footer-area px-10">
         <div class="container">
           <div class="row">
             <div class="col-xl-4 col-lg-4 col-md-4">
@@ -42,7 +42,11 @@ const Footer = () => {
                 <div class="footer-head">
                   <div class="footer-logo">
                     <a href="#">
-                      <img src="img/logo/logo2.png" alt="" />
+                      <img
+                        src="img/logo/log.png"
+                        className="w-16 h-16"
+                        alt=""
+                      />
                     </a>
                   </div>
                   <div class="footer-icons">

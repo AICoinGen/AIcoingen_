@@ -20,7 +20,7 @@ const Header = () => {
     },
   ];
   return (
-    <header class="header-one bg-color-5">
+    <header class="header-one bg-color-5 px-6">
       <div class="header-menu-area header-area">
         <div class="container">
           <div class="row">
@@ -33,16 +33,18 @@ const Header = () => {
             </div>
             <div class="col-xl-10 col-lg-10 col-md-9">
               <div class="header-right ">
-                <a href="#" class="top-btn coin-btn rounded-full">
+                <a href="#" class="top-btn coin-btn rounded-full font-normal">
                   Buy token
                 </a>
               </div>
               <div class="header_menu f-right">
                 <nav id="mobile-menu">
-                  <ul className="new-nav-class" class="main-menu">
+                  <ul className="new-nav-class" class="main-menu font-normal">
                     {menuList.map((menu, i) => (
-                      <li class="resulta" key={i + 1}>
-                        <a href={menu.link}>{menu.name}</a>
+                      <li class=" font-normal" key={i + 1}>
+                        <a className="font-normal" href={menu.link}>
+                          {menu.name}
+                        </a>
                       </li>
                     ))}
                   </ul>

@@ -14,16 +14,17 @@ const Swap = ({ nativeToken, transferNativeToken }) => {
   return (
     <div class="swap-area bg-color-5 fix area-padding">
       <div class="container">
-        <div class="row d-flex flex-wrap align-items-center">
+        <div class="row d-flex flex-wrap align-items-center mx-6">
           <div class="col-xl-6 col-lg-6 col-md-6">
             <div class="swap-inner">
               <div class="swap-token left-headline">
-                <div class="top-text-title">COIN SWAP</div>
+                <div class="pb-2">COIN SWAP</div>
                 <h2>
-                  You can swap <span class="color-text-bold">AICoin token</span>{" "}
+                  You can swap{" "}
+                  <span class="text-[#ff03b7] font-bold">AICoin token</span>{" "}
                   anytime
                 </h2>
-                <p>
+                <p class="py-3 text-lg font-normal">
                   AICoin is the native cryptocurrency of this platform, offering
                   seamless and secure transactions. With AICoin, you can send
                   any amount to anywhere in the world quickly and efficiently,
@@ -34,10 +35,10 @@ const Swap = ({ nativeToken, transferNativeToken }) => {
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6">
             <div class="money-send">
-              <div class="calculator-inner">
+              <div class="calculator-inner rounded-xl">
                 <div class="single-cal">
                   <div class="swap-top d-flex flex-wrap align-items-center">
-                    <div class="swap-left">
+                    <div class=" rounded-full">
                       <span>Token</span>
                     </div>
                     <div class="swap-right">
@@ -47,8 +48,8 @@ const Swap = ({ nativeToken, transferNativeToken }) => {
                             <FiSettings />
                           </a>
 
-                          <div class="notification-area left-part">
-                            <div class="notifacation-header">
+                          <div class="notification-area bg-black p-4 rounded-lg left-part">
+                            <div class="">
                               <span class="set-text">Native Token</span>
                               <div class="swap-set">
                                 <span>
@@ -61,7 +62,7 @@ const Swap = ({ nativeToken, transferNativeToken }) => {
                                   <li>
                                     <a>{nativeToken?.symbol}</a>
                                   </li>
-                                  <li>
+                                  <li class="pt-2">
                                     <a>Tol: {nativeToken?.totalSupply}</a>
                                   </li>
                                 </ul>
@@ -81,9 +82,6 @@ const Swap = ({ nativeToken, transferNativeToken }) => {
                           </div>
                         </li>
                         <li>
-                          <a href="#0" class="author">
-                            <MdPowerSettingsNew />
-                          </a>
                           <div class="notification-area side-part">
                             <div class="author-body text-center">
                               <span>
@@ -105,30 +103,24 @@ const Swap = ({ nativeToken, transferNativeToken }) => {
                       <label>Address</label>
                       <input
                         type="text"
-                        class="form-input"
+                        class=" w-full rounded-lg p-2 bg-[#131313] my-2"
                         onChange={(e) => handleTokenInfo("address", e)}
                         placeholder="address"
                       />
-                      <span>
-                        <BsFillSendFill />
-                      </span>
                     </form>
                   </div>
-                  <div class="middle-inti text-center">
-                    <a href="#">
-                      <BsBoxArrowDown />
-                    </a>
-                  </div>
+
                   <div class="inner-form">
                     <form action="#">
-                      <label>Amount</label>
+                      <label>
+                        Amount <span>{nativeToken?.symbol} Token</span>
+                      </label>
                       <input
                         onChange={(e) => handleTokenInfo("tokenNo", e)}
                         type="text"
-                        class="form-input"
+                        class="w-full rounded-lg p-2 bg-[#131313] my-2"
                         placeholder="amount"
                       />{" "}
-                      <span>{nativeToken?.symbol} Token</span>
                     </form>
                   </div>
                   <div class="inner-form-text">
@@ -138,7 +130,7 @@ const Swap = ({ nativeToken, transferNativeToken }) => {
                   </div>
                   <button
                     onClick={() => transferNativeToken(token)}
-                    class="cale-btn"
+                    class="cale-btn rounded-lg"
                   >
                     Transfer Token
                   </button>

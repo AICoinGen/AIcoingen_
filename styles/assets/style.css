@@ -31,15 +31,16 @@
 
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"); */
 
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"); */
 
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
 /*----------------------------------------*/
 
 /*  1.  Theme default CSS
 /*----------------------------------------*/
 
 body {
-  font-family: "Nunito", sans-serif;
+  /* font-family: "Nunito", sans-serif; */
   font-weight: normal;
   font-style: normal;
   color: #ddd;
@@ -110,7 +111,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nunito", sans-serif;
+  /* font-family: "Nunito", sans-serif; */
   color: #fff;
   margin-top: 0px;
   font-weight: 700;
@@ -134,7 +135,7 @@ h1 {
 h2 {
   font-size: 44px;
   line-height: 56px;
-  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Josefin Sans", sans-serif; */
 }
 
 h3 {
@@ -321,7 +322,7 @@ div#preloader {
 .main-title {
   font-size: 56px;
   line-height: 64px;
-  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Josefin Sans", sans-serif; */
 }
 
 .well-service-text p {
@@ -368,11 +369,9 @@ div#preloader {
 
 .header_menu ul li a {
   color: #fff;
-  font-weight: 700;
   padding: 40px 0;
   display: block;
   font-size: 15px;
-  text-transform: uppercase;
 }
 
 .header_menu ul li a:hover {
@@ -385,7 +384,7 @@ div#preloader {
 
 .header_menu ul li.menu-item-has-children > a::after {
   content: "\e64b";
-  font-family: "themify";
+  /* font-family: "themify"; */
   font-weight: 700;
   margin-left: 5px;
   font-size: 10px;
@@ -532,7 +531,7 @@ div#preloader {
   font-weight: 700;
   line-height: 76px;
   margin-bottom: 20px;
-  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Josefin Sans", sans-serif; */
 }
 
 .money-send {
@@ -814,7 +813,7 @@ button.cale-btn:hover {
   font-weight: 700;
   line-height: 90px;
   margin-bottom: 20px;
-  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Josefin Sans", sans-serif; */
   text-transform: uppercase;
 }
 
@@ -924,7 +923,7 @@ button.cale-btn:hover {
   left: 0px;
   top: 13px;
   content: "\e64c";
-  font-family: themify;
+  /* font-family: themify; */
   width: 22px;
   height: 22px;
   line-height: 24px;
@@ -1169,7 +1168,7 @@ button.cale-btn:hover {
 }
 
 .token-count li .token-day {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   text-transform: uppercase;
   padding-top: 8px;
   display: block;
@@ -1776,7 +1775,7 @@ button.cale-btn:hover {
 .faq_inner .card-header h4 button::before {
   position: absolute;
   content: "\e622 ";
-  font-family: themify;
+  /* font-family: themify; */
   top: 50%;
   right: 10px;
   width: 25px;
@@ -1796,7 +1795,6 @@ button.cale-btn:hover {
 
 .faq_inner .card-header h4 button.collapsed::before {
   content: "\e61a";
-  font-family: themify;
   background-color: #131740;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1948,7 +1946,7 @@ button.cale-btn:hover {
   top: 3px;
   content: "\e628";
   color: #fff;
-  font-family: themify;
+  /* font-family: themify; */
   font-size: 14px;
   transition: 0.5s;
 }
@@ -2340,7 +2338,7 @@ blockquote::before {
   top: 20px;
   left: 30px;
   content: "\f10d ";
-  font-family: fontawesome;
+  /* font-family: fontawesome; */
   font-size: 34px;
   color: #eee;
 }
@@ -3037,7 +3035,7 @@ span.email-notes {
 }
 
 .table-inner table {
-  font-family: arial, sans-serif;
+  /* font-family: arial, sans-serif; */
   border-collapse: collapse;
   width: 100%;
 }
