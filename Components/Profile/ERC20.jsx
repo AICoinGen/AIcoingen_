@@ -1,5 +1,13 @@
-import React, { useState } from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import { AiOutlineClose } from "react-icons/ai";
+import OpenAI from "openai";
+
+const openai = new OpenAI({
+  apiKey: "sk-proj-C2je0PEkLWoKhhptR8tFT3BlbkFJVg7pWZU2tOix7kQt8jk7", // This is the default and can be omitted
+  // process.env["sk-proj-C2je0PEkLWoKhhptR8tFT3BlbkFJVg7pWZU2tOix7kQt8jk7"], // This is the default and can be omitted
+  dangerouslyAllowBrowser: true,
+});
 
 const ERC20 = ({ setActive, createERC20 }) => {
   const [token, setToken] = useState({
@@ -11,6 +19,37 @@ const ERC20 = ({ setActive, createERC20 }) => {
   const handleTokenInfo = (fieldName, e) => {
     setToken({ ...token, [fieldName]: e.target.value });
   };
+  const suggestCoin = async () => {
+    const chatCompletion = await openai.chat.completions.create({
+      messages: [
+        {
+          role: "user",
+          content:
+            "your role and goal is to be an AI ERC20 Token creator, your job is to return a json file format that suggest a name and a symbol",
+        },
+      ],
+      model: "gpt-3.5-turbo",
+    });
+    let suggestCoin = JSON.parse(chatCompletion.choices[0].message.content);
+    setToken({ name: suggestCoin.name, symbol: suggestCoin.symbol });
+  };
+  // useEffect(() => {
+  //   async function main() {
+  //     const chatCompletion = await openai.chat.completions.create({
+  //       messages: [
+  //         {
+  //           role: "user",
+  //           content:
+  //             "your role and goal is to be an AI ERC20 Token creator, your job is to return a json file format that suggest a name and a symbol",
+  //         },
+  //       ],
+  //       model: "gpt-3.5-turbo",
+  //     });
+  //     console.log(JSON.parse(chatCompletion.choices[0].message.content));
+  //   }
+
+  //   main();
+  // }, []);
 
   return (
     <div class="login-area area-padding fix">
@@ -23,13 +62,21 @@ const ERC20 = ({ setActive, createERC20 }) => {
                 <AiOutlineClose />
               </span>
               <h4 class="login-title text-center">Create ERC20 Token</h4>
-
+              <button
+                onClick={() => suggestCoin()}
+                type="submit"
+                id="submit"
+                class="slide-btn color-btn login-btn"
+              >
+                AI suggest Coin
+              </button>
               <div id="contactForm" class="log-form">
                 <input
                   type="text"
                   id="name"
                   class="form-control"
                   placeholder="Name"
+                  value={token.name}
                   required
                   onChange={(e) => handleTokenInfo("name", e)}
                 />
@@ -39,6 +86,7 @@ const ERC20 = ({ setActive, createERC20 }) => {
                   class="form-control"
                   placeholder="Symbol"
                   required
+                  value={token.symbol}
                   onChange={(e) => handleTokenInfo("symbol", e)}
                 />
                 <input

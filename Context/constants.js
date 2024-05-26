@@ -11,14 +11,3 @@ export const ERC20Generator_ADDRESS =
 export const LookUpContract_ABI = LookUpContract.abi;
 export const LookUpContract_ADDRESS =
   "0x6686c65baCDCC61e698Ec301fC9B6098346C4E66";
-
-// ssh-keygen -t rsa -C "moonlightwhisper7@gmail.com" -f "moonlightwhisper7"
-// ssh-add -K ~/.ssh/moonlightwhisper7
-// pbcopy < ~/.ssh/moonlightwhisper7.pub
-// open config
-
-// #gonormonor-personal account
-// Host github.com-
-//      HostName github.com
-//      User git
-//      IdentityFile ~/.ssh/github-rahul-personal
