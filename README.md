@@ -8,7 +8,7 @@
     <a href="https://github.com/mendsalbert/AICOINGEN/issues" title="Report Bug/Request Feature">🚀 Got Issue</a>
 </p>
 <a href="" title="Project Screenshot">
-    <img src="./styles/assets/img/front.png" width="100%" alt="Project Screenshot"/>
+    <img src="./styles/assets/img/part.png" width="100%" alt="Project Screenshot"/>
 </a>
 
 ## Inspiration 💡
