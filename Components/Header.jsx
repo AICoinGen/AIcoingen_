@@ -21,38 +21,41 @@ const Header = () => {
   ];
 
   return (
-    <header class="bg-color-5 px-6 py-4">
-      <div class="container mx-auto flex justify-between items-center">
-        <div class="flex items-center">
-          <div class="logo">
+    <header className="bg-color-5 px-6 py-4">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="flex items-center">
+          <div className="logo">
             <a href="/">
-              <img src="img/logo/log.png" alt="Logo" class="h-8" />
+              <img src="img/logo/log.png" alt="Logo" className="h-8" />
             </a>
           </div>
         </div>
-        <div class="hidden md:flex md:flex-row md:items-center space-x-4">
+        <div className="hidden md:flex md:flex-row md:items-center space-x-4">
           {menuList.map((menu, i) => (
             <a
-              class="text-white font-normal hover:text-gray-400 transition"
+              className="text-white font-normal hover:text-gray-400 transition"
               href={menu.link}
               key={i}
             >
               {menu.name}
             </a>
           ))}
-          <a href="/create" class="top-btn coin-btn rounded-full font-normal">
+          <a
+            href="/create"
+            className="top-btn coin-btn rounded-full font-normal"
+          >
             Buy token
           </a>
         </div>
-        <div class="md:hidden flex items-center">
+        <div className="md:hidden flex items-center">
           <button
-            class="outline-none mobile-menu-button"
+            className="outline-none mobile-menu-button"
             onClick={() => {
               document.getElementById("mobile-menu").classList.toggle("hidden");
             }}
           >
             <svg
-              class="w-6 h-6 text-white"
+              className="w-6 h-6 text-white"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -65,12 +68,12 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div class="hidden mobile-menu bg-color-5 md:hidden" id="mobile-menu">
-        <ul class="space-y-4 px-6 py-4">
+      <div className="hidden mobile-menu bg-color-5 md:hidden" id="mobile-menu">
+        <ul className="space-y-4 px-6 py-4">
           {menuList.map((menu, i) => (
             <li key={i}>
               <a
-                class="block text-white font-normal hover:text-gray-400 transition"
+                className="block text-white font-normal hover:text-gray-400 transition"
                 href={menu.link}
               >
                 {menu.name}
@@ -80,7 +83,7 @@ const Header = () => {
           <li>
             <a
               href="#"
-              class="block text-white font-normal bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 rounded-full py-2 px-4 text-center"
+              className="block text-white font-normal bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 rounded-full py-2 px-4 text-center"
             >
               Buy token
             </a>
