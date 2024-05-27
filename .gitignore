@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 node_modules
+/legacyContracts
+legacyContracts
+./legacyContracts
 /.pnp
 .pnp.js
 .yarn/install-state.gz
