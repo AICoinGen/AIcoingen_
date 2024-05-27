@@ -2,45 +2,56 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div class="intro-area intro-area-2">
-      <div class="bg-wrapper">
-        <img src="img/background/bg2.jpg" alt="" />
+    <div className="intro-area intro-area-2 relative pt-64 pb-16 ">
+      <div className="bg-wrapper absolute inset-0">
+        <img
+          src="img/background/bg2.jpg"
+          alt="Background"
+          className="w-full h-full object-cover"
+        />
       </div>
-      <div class="intro-content">
-        <div class="slider-content">
-          <div class="container mx-10">
-            <div class="row d-flex flex-wrap align-items-center">
-              <div class="col-xl-6 col-lg-6 col-md-6">
-                <div class="slide-all-text">
+      <div className="intro-content relative z-10">
+        <div className="slider-content">
+          <div className="container  md:px-10">
+            <div className="row flex justify-between  items-center">
+              <div className="w-full md:w-1/2">
+                <div className="slide-all-text  md:ml-7">
                   <div
-                    class="layer-2 wow fadeInUp text-3xl py-2 "
+                    className="layer-2 wow fadeInUp text-3xl py-2"
                     data-wow-delay="0.3s"
                   >
-                    <h1 class="title-2 ">
-                      Create your own <span class="text-[#ff03b7]">ERC20 </span>
-                      token with <span class="text-[#ff03b7]">AI </span>{" "}
+                    <h1 className="title-2 text-white">
+                      Create your own{" "}
+                      <span className="text-[#ff03b7]">ERC20 </span>
+                      token with <span className="text-[#ff03b7]">AI </span>
                     </h1>
                   </div>
-
-                  <div class=" space-x-4" data-wow-delay="0.7s">
+                  <div className="space-x-4 mt-4" data-wow-delay="0.7s">
                     <a
                       href="contact.html"
-                      className="bg-white px-5 py-3  rounded-full text-black text-md"
+                      className="bg-white px-5 py-3 rounded-full text-black text-md"
                     >
                       Get Started
                     </a>
                     <a
                       href="coin.html"
-                      class="bg-black border-2 px-5 py-3  rounded-full text-white text-md"
+                      className="bg-black border-2 px-5 py-3 rounded-full text-white text-md"
                     >
                       White Paper
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6 col-lg-6 col-md-6">
-                <div class="slide-images wow fadeInUp" data-wow-delay="0.3s">
-                  <img src="img/slider/coi.png" alt="" />
+              <div className="w-full md:w-1/2 mt-6 -mr-28 md:mt-0">
+                <div
+                  className="slide-images wow fadeInUp"
+                  data-wow-delay="0.3s"
+                >
+                  <img
+                    src="img/slider/coi.png"
+                    alt="Coin"
+                    className="mx-auto md:ml-auto"
+                  />
                 </div>
               </div>
             </div>
