@@ -1,5 +1,5 @@
-import React from "react";
 import { BsBoxArrowRight } from "react-icons/bs";
+import React from "react";
 
 const SideBar = ({ setActive, setOpen, open, address, setTransfer }) => {
   const menuList = [
@@ -33,24 +33,24 @@ const SideBar = ({ setActive, setOpen, open, address, setTransfer }) => {
                   onClick={() => setOpen(el.name)}
                   class={open == el.name ? "active " : ""}
                 >
-                  <a className="flex flex-row">
+                  <div className="flex flex-row items-center cursor-pointer space-x-2 py-3 hover:bg-[#ff06b7] hover:rounded-lg hover:p-2">
                     <BsBoxArrowRight />
                     {/* <span className="new_space"> </span> */}
-                    {el.name}
-                  </a>
+                    <span>{el.name}</span>
+                  </div>
                 </li>
               ))}
               <li onClick={() => setActive(true)}>
-                <a href="#">
+                <div className="flex flex-row items-center cursor-pointer space-x-2 py-3 hover:bg-[#ff06b7] hover:rounded-lg hover:p-2">
                   <BsBoxArrowRight />
-                  Create Token
-                </a>
+                  <span>Create Token</span>
+                </div>
               </li>
               <li onClick={() => setTransfer(true)}>
-                <a href="#">
+                <div className="flex flex-row items-center space-x-2 py-3 hover:bg-[#ff06b7] hover:rounded-lg hover:p-2">
                   <BsBoxArrowRight />
-                  Token Transfer
-                </a>
+                  <span>Token Transfer</span>
+                </div>
               </li>
             </ul>
           </div>
