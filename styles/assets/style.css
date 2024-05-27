@@ -38,6 +38,9 @@
 
 /*  1.  Theme default CSS
 /*----------------------------------------*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   /* font-family: "Nunito", sans-serif; */
