@@ -40,7 +40,7 @@ const Header = () => {
               {menu.name}
             </a>
           ))}
-          <a href="#" class="top-btn coin-btn rounded-full font-normal">
+          <a href="/create" class="top-btn coin-btn rounded-full font-normal">
             Buy token
           </a>
         </div>
