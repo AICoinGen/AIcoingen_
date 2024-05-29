@@ -25,9 +25,8 @@ export const StateContextProvider = ({ children }) => {
   const [mainBalance, setMainBalance] = useState();
   const [nativeToken, setNativeToken] = useState();
 
-  // Define the network you want to switch to
   const zkEVMCardonaTestnet = {
-    chainId: "0x98A", // 2442 in hexadecimal
+    chainId: "0x98A",
     chainName: "Polygon zkEVM Cardona Testnet",
     nativeCurrency: {
       name: "Polygon zkEVM Cardona Testnet",
