@@ -34,7 +34,7 @@ const HeroSection = () => {
                       Get Started
                     </a>
                     <a
-                      href="coin.html"
+                      href="https://docs.google.com/document/d/14rpnbiSuN3YR6TsqbbsMudnfCYY1fBCK/edit?usp=sharing&ouid=107854233374673194183&rtpof=true&sd=true"
                       className="bg-black border-2 px-5 py-3 rounded-full text-white text-md"
                     >
                       White Paper
