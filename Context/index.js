@@ -50,7 +50,6 @@ export const StateContextProvider = ({ children }) => {
     }
   };
 
-  // Function to check if the current network is the target network
   const checkNetwork = async () => {
     try {
       if (!window.ethereum) throw new Error("No crypto wallet found");
